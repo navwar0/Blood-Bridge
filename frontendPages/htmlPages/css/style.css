@@ -1,0 +1,140 @@
+/* h1{
+    color :#FDFFFF;
+    font-size: 80px;
+    font-family:'Trebuchet M';
+    text-align: center;
+}
+
+body{
+
+    background-color: #260C1A;
+} */
+
+*{
+
+margin: 0;
+font-family: Arial;
+border: border-box;
+}
+
+.navbar
+{
+    background-color: #432E36 ;
+    height: 150px;
+    color:antiquewhite;
+}
+.header
+{
+    height: 150px;
+}
+#head
+{
+    height: 150px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bodybar
+{
+    height:600px;
+    background-color:antiquewhite;
+    text-align: center; /* Center the content */
+    
+}
+
+.label
+{
+    height: 50px;
+    text-align: center; /* Center the content */
+    
+}
+#labelname
+{
+    font-size:20px ;
+    color: #432E36;
+    position: relative;
+    top: 15px; /* Adjust the top value as needed */
+}
+#dropdown
+{
+    height: 30px;
+
+    font-size: 20px;
+    color:#260C1A;
+    background-color: #432E36; /* Set your desired background color */
+    border: 1px solid antiquewhite; /* Set the border color */
+    border-radius: 3px; /* Optional: Add border-radius for rounded corners */
+    position: relative;
+    top: 15px; /* Adjust the top value as needed */
+}
+
+ #dropdown:focus,
+     #dropdown:active {
+    color: antiquewhite;
+    background-color:#432E36;
+}
+
+#submitButton
+{
+    position: relative;
+    top: 12px; /* Adjust the top value as needed */
+    padding: 5.5px;
+}
+#text
+{   
+    height: 300px;
+    position: relative;
+    top: 40px; /* Adjust the top value as needed */
+    text-align: center; /* Center the content */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.user
+{
+    height: 200 px;
+    text-align: center; /* Center the content */
+}
+
+#CreateUserButton
+{   position: relative;
+    margin-bottom: 10px; /* Add margin below each input box */
+    padding: 8px; /* Increase padding to make the input boxes bigger */
+}
+input
+{
+    margin-bottom: 10px; /* Add margin below each input box */
+    padding: 8px; /* Increase padding to make the input boxes bigger */
+    width: 200px; /* Set a specific width for the input boxes */
+    box-sizing: border-box; 
+}
+
+
+
+
+#table {
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #table th, #table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #table th {
+    background-color: #f2f2f2;
+  }
+  
+  #table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  #table tr:hover {
+    background-color: #e1f5fe;
+  }
+  
+  

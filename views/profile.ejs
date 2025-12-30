@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- ===== ===== Custom Css ===== ===== -->
+   
+    <link rel="stylesheet" href="ejsPages/css/style.css">
+    <link rel="stylesheet" href="ejsPages/css/responsive.css">
+
+    <!-- ===== ===== Remix Font Icons Cdn ===== ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <script>
+        const userid = '<%= userid %>';
+    </script>
+    <script type="text/javascript" src="/ejsPages/js/donorProfile.js" defer></script>
+</head>
+
+<body>
+    <!-- ===== ===== Body Main-Background ===== ===== -->
+    <span class="main_bg"></span>
+
+
+    <!-- ===== ===== Main-Container ===== ===== -->
+    <div class="container">
+
+        <!-- ===== ===== Header/Navbar ===== ===== -->
+        <header>
+            <div class="brandLogo">
+                <span>Donor Profile</span>
+            </div>
+        </header>
+<!-- ===== ===== User Main-Profile ===== ===== -->
+<!-- <section class="userProfile card">
+    <div class="profile">
+        <form id="photoUploadForm" enctype="multipart/form-data">
+            <figure>
+                <img src="img.jpg" alt="profile" width="250px" height="250px">
+                <label for="photoUploadInput" id="photoUploadLabel" class="fileLabel">Choose File</label>
+                <input type="file" id="photoUploadInput" name="profilePhoto" accept=".jpg, .png" onchange="updateSelectedFileName()">
+                <button id="uploadButton" type="button" onclick="uploadPhoto()">Upload</button>
+            </figure>
+        </form>
+    </div>
+</section> -->
+
+
+<section class="userProfile card">
+    <div class="profile" id="profilePhoto">
+        <!-- Background image will be applied here -->
+        <label for="photoUploadInput" id="photoUploadLabel" class="fileLabel">Choose File</label>
+        <input type="file" id="photoUploadInput" name="profilePhoto" accept=".jpg, .png" onchange="updateSelectedFileName()">
+        <button id="uploadButton" type="button" onclick="uploadPhoto()">Upload</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+        <!-- ===== ===== Work & Skills Section ===== ===== -->
+        <section class="work_skills card">
+
+            <!-- ===== ===== Work Contaienr ===== ===== -->
+            <div class="work">
+                
+                <div class="primary">
+                    <h1>THANKS FOR BEING WITH BLOOD BRIDGE</h1>
+                
+                </div>
+
+                <div class="secondary">
+                    <h1> WE ALWAYS WELCOME YOU<br> </h1>
+                    
+                </div>
+            </div>
+
+            <!-- ===== ===== Skills Contaienr ===== ===== -->
+            <div class="skills">
+                <h1 class="heading">Mottos</h1>
+                <ul>
+                    <li style="--i:0">Inspiration</li>
+                    <li style="--i:1">Resilience</li>
+                    <li style="--i:2">Serenity</li>
+                    <li style="--i:3">Life-saving</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== User Details Sections ===== ===== -->
+        <section class="userDetails card">
+            <div class="userName">
+                <h1 class="name">Jeremy Rose</h1>
+                <!-- <div class="map">
+                    <i class="ri-map-pin-fill ri"></i>
+                    <span>New York, NY</span>
+                </div> -->
+                <p>Blood Group: O+</p>
+            </div>
+
+            <!-- <div class="rank">
+                <h1 class="heading">Ratings</h1>
+                <span>8.6</span>
+                <div class="rating">
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill rate"></i>
+                    <i class="ri-star-fill underrate"></i>
+                </div>
+            </div> -->
+
+            <div class="btns">
+                <ul>
+                    
+
+                 <li class="sendMsg active">
+                        <i class="ri-check-fill ri"></i>
+                        <a href="#">Update Profile</a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- ===== ===== Timeline & About Sections ===== ===== -->
+        <section class="timeline_about card">
+            <div class="tabs">
+                <ul>
+
+                    <li class="about active">
+                        <i class="ri-user-3-fill ri"></i>
+                        <span>About</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact_Info">
+                <h1 class="heading">Contact Information</h1>
+                <ul>
+                    <li class="phone">
+                        <h1 class="label">Phone:</h1>
+                        <span class="info">+11 234 567 890</span>
+                    </li>
+
+                    <li class="address">
+                        <h1 class="label">Address:</h1>
+                        <span class="info">S34 E 65th Street <br> New York, NY 10651-78 156-187-60</span>
+                    </li>
+
+                    <li class="email">
+                        <h1 class="label">E-mail:</h1>
+                        <span class="info">hello@rsmarquetech.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="basic_info">
+                <h1 class="heading">Basic Information</h1>
+                <ul>
+                    <li class="birthday">
+                        <h1 class="label">Birthday:</h1>
+                        <span class="info">Dec 25, 2000</span>
+                    </li>
+
+                    <li class="gender">
+                        <h1 class="label">Gender:</h1>
+                        <span class="info">Male</span>
+                    </li>
+
+                    <li class="age">
+                        <h1 class="label">Age:</h1>
+                        <span class="info">18</span>
+                    </li>
+
+
+                </ul>
+            </div>
+        </section>
+    </div>
+     
+
+    <!-- //update option -->
+    <div class="overlay"></div> <!-- Overlay div for background blur -->
+      
+    <div class="userDetail card"  style="display: none;">
+       
+    
+        <div class="updateProfileForm" style="display: none; align-items: center; justify-content: center;">
+            <h1 class="heading" style="color: #550011;">Update Profile</h1>
+            <form id="profileForm">
+                <label for="name" style="color: #550011;">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="phone" style="color: #550011;">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+    
+                <label for="area" style="color: #550011;">Area:</label><br>
+                <input type="text" id="area" name="area" required><br>
+    
+                <label for="district" style="color: #550011;">District:</label><br>
+                <input type="text" id="district" name="district" required><br>
+    
+                <label for="password" style="color: #550011;">Password:</label><br>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" required>
+                    <i class="far fa-eye" id="togglePassword" style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); cursor: pointer;"></i>
+                </div>
+    
+                <label for="email" style="color: #550011;">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                    
+                
+
+                <label for="gender" style="color: #550011;">Gender:</label><br>
+                <input type="text" id="gender" name="gender" required><br>
+    
+                <label for="bloodGroup" style="color: #550011;">Blood Group:</label><br>
+                <input type="text" id="bloodGroup" name="bloodGroup" required><br>
+    
+                <label for="rh" style="color: #550011;">Rh:</label><br>
+                <input type="text" id="rh" name="rh" required><br>
+    
+                
+            </form>
+            <button id="submit" style="background-color: #550011; color: white;">Submit</button>
+            <button id="cancelUpdate" style="background-color: #550011; color: white;">Cancel</button>
+
+        </div>
+    </div>
+    
+</body>
+
+</html>

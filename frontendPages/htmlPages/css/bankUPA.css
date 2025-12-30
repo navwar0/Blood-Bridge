@@ -1,0 +1,245 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wholeBody {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    user-select: none;
+}
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    user-select: none;
+    background-color: rgb(106, 23, 23);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-title {
+    font-size: 24px; 
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: not-allowed;
+    transition: color 0.3s;
+    user-select: none;
+    margin-left: 5px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center; 
+    width: auto;
+    padding-right: 5px;
+}
+.notification-div {
+    margin-right: 20px;
+    position: relative; 
+}
+
+.bell-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.notification-number {
+    position: absolute;
+    top: -5px; 
+    right: -5px; 
+    background-color: rgb(172, 20, 20);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.log-out-button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+.main-body {
+    display: flex;
+    position: relative;
+    height: 100%;
+    flex-direction: row;
+}
+
+.sidebar {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    user-select: none;
+    position: fixed;
+    overflow-y: auto;
+    background-color: rgb(106, 23, 23);
+}
+
+.list-group{
+    margin-top: 40px;
+    background-color: rgb(230, 236, 230);
+}
+.list-group-item {
+    color: rgb(255, 251, 251);
+    font: 1em sans-serif;
+    font-size: small;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(210, 199, 199); 
+    border-top:1px solid rgb(210, 199, 199);
+    height: 35px;
+    background-color: rgb(106, 23, 23);
+}
+.list-group-item:hover{
+    background-color: rgb(185, 79, 79);
+    color: rgb(255, 255, 255);
+
+}
+.main-content {
+    margin-top: 50px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+}
+/*//////////////////////////////////////////////////////////start//////////////////////////////////////////////////////*/
+
+.left-div{
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 750px;
+    user-select: none;
+}
+.right-div {
+    right:0;
+    margin-right: 60px;
+    margin-top: 100px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #B4B4B8;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    user-select: none;
+    border-radius: 10px;
+}
+.left-div-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 10px;
+}
+.appointments {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #07ff83;
+}
+
+.appointment{
+    border-top:1px solid #060302;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f44336;
+}
+/* on clicking an appointment the appointment should be looking like that appointment is selected */
+.appointment:hover{
+    cursor: pointer;
+    border: 1px solid #1d1a1a;
+}
+
+.appointment-item{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    margin-right: 10px;
+}
+
+.appointment-item-item{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.appointment-item:nth-child(odd){
+    background-color: #d5c4c3;
+}
+
+.appointment-item:nth-child(even){
+    background-color: bisque;
+}
+
+.appointment:last-child {
+    border-bottom: none;
+}
+
+
+
+
+/* .upper-div{
+
+} */
+
+.picture-div{
+    width: 350px;
+    height: 300px;
+    margin-left: 30px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+}
+.details-div{
+    margin-top: 05px;
+    margin-left: 30px;
+}
+
+.document{
+    margin-top: 15px;
+}
+.lower-div{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.accept-reject-div button{
+    margin-right: 40px;
+}
+
+
+
+.quantity-div{
+    margin-bottom: 20px;
+}
+
+.grant-cancel-button-div button{
+    margin-right: 40px;
+}

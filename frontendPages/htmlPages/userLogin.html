@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <section>
+        <div class="image-container">
+           
+            <img id="your-image" src="./image/login.png" alt="Your Image">
+        </div>
+        <div class="form-box">
+            <form id="me">
+                <h2>Login</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input id="emailInputId" type="email" required autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input id="passwordInputID" type="password" required autocomplete="new-password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="forget">
+                    <label><input type="checkbox">Remember Me<a href="#">Forget Password</a></label>
+                    
+                </div>
+                <button onclick="userLoginRequest(event)">Log in</button>
+                <div class="register">
+                    <p>Don't have an account?<a href="userSignup2.html">Register</a></p>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/userLogin.js"></script>
+</body>
+</html>
