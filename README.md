@@ -81,4 +81,11 @@ Make sure you have node and oracle installed in your device.
 
 ![Screenshot 2024-07-26 153849](https://github.com/user-attachments/assets/e734ed11-eaca-4dd5-a377-aec8d758cddd)
 
+## Credits
+
+Originally developed with a partner; this is my personal version for portfolio.
+
+
 ![Screenshot 2024-07-26 154022](https://github.com/user-attachments/assets/4efeccd3-cb75-452d-bc17-cdc677262a67)
+
+
