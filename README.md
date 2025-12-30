@@ -1,4 +1,6 @@
 # BLOOD-BRIDGE
+A full stack blood donation management system
+
 
 ## About the project
 The database related files( ERD , Schema ) are included in the folder z_related_stuffs_to_the_project
